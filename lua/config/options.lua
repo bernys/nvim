@@ -6,12 +6,16 @@ opt.spelllang = { "en" }
 opt.clipboard = "unnamedplus"
 opt.number = true
 opt.relativenumber = true
-opt.colorcolumn = "110"
+opt.colorcolumn = "120"
 
-opt.shiftwidth = 2
-opt.tabstop = 2
 opt.smartindent = true
 opt.autoindent = true
+
+opt.expandtab = false
+opt.shiftwidth = 2
+opt.tabstop = 2
+opt.softtabstop = 2
+
 
 opt.termguicolors = true
 opt.splitright = true
