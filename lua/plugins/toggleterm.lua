@@ -12,14 +12,14 @@ return {
 				start_in_insert = false,
 				insert_mappings = true,
 				persist_size = true,
-				direction = "horizontal", -- Options: 'vertical', 'horizontal', 'tab', 'float'
+				direction = "horizontal",
 				close_on_exit = true,
-				shell = vim.o.shell,  -- Here is the terminal that u usually use
+				shell = vim.o.shell, -- Here is the terminal that u usually use
 				float_opts = {
 					border = "curved",
 				},
 			})
-			vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { noremap = true, silent = true })
+			vim.keymap.set("t", "<Esc><Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })
 		end,
 	},
 }

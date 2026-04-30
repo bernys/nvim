@@ -1,6 +1,6 @@
 return {
 	{
-		-- icons plug
+		-- icons
 		"nvim-tree/nvim-web-devicons",
 		config = function()
 			require("nvim-web-devicons").setup({})
@@ -8,12 +8,27 @@ return {
 		priority = 1000,
 	},
 	{
-		-- multi cursor plug
+		-- multi-cursor
 		'mg979/vim-visual-multi',
-		branch = 'master'
+		branch = 'master',
+		init = function()
+			vim.g.VM_maps = {
+				["Add Cursor Up"] = "<C-S-K>",
+				["Add Cursor Down"] = "<C-S-J>",
+			}
+		end,
 	},
 	{
-		-- surround plug
+		-- comment
+		'numToStr/Comment.nvim',
+	},
+	{
+		-- comment TSX JSX
+		'JoosepAlviste/nvim-ts-context-commentstring',
+		lazy = false,
+	},
+	{
+		-- surround
 		"tpope/vim-surround"
 	}
 }

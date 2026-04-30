@@ -45,6 +45,7 @@ return {
 			map('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 			map("n", "<leader>fd", builtin.diagnostics, {})
 			map("n", "<leader>fr", "<cmd>Telescope lsp_references<cr>", { desc = 'Telescope watch references' })
+			map("n", "<leader>fc", "<cmd>Telescope colorscheme<cr>", { desc = 'Telescope colorscheme' })
 		end
 	}
 }

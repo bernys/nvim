@@ -6,7 +6,6 @@ return {
 			require("mini.pairs").setup()
 			require("mini.cursorword").setup()
 			require("mini.notify").setup()
-			require("mini.comment").setup()
 			require("mini.tabline").setup()
 			require("mini.move").setup()
 			require("mini.splitjoin").setup()
@@ -19,7 +18,6 @@ return {
 			vim.keymap.set("n", "<leader>e", function()
 				local buf_name = vim.api.nvim_buf_get_name(0)
 
-				-- Si el buffer es un archivo válido, lo revela en el árbol
 				if buf_name ~= "" and vim.bo.buftype == "" then
 					MiniFiles.open(buf_name)
 					MiniFiles.reveal_cwd()
