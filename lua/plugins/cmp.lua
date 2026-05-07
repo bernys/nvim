@@ -12,8 +12,6 @@ return {
 		config = function()
 			local cmp = require("cmp")
 			local luasnip = require("luasnip")
-
-			-- Cargar los snippets estilo VS Code
 			require("luasnip.loaders.from_vscode").lazy_load()
 
 			cmp.setup({
