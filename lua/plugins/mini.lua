@@ -5,7 +5,6 @@ return {
 		config = function()
 			require("mini.pairs").setup()
 			require("mini.cursorword").setup()
-			require("mini.notify").setup()
 			require("mini.tabline").setup()
 			require("mini.move").setup()
 			require("mini.splitjoin").setup()

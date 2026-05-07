@@ -1,6 +1,5 @@
 return {
 	{
-		-- icons
 		"nvim-tree/nvim-web-devicons",
 		config = function()
 			require("nvim-web-devicons").setup({})
@@ -8,7 +7,6 @@ return {
 		priority = 1000,
 	},
 	{
-		-- multi-cursor
 		'mg979/vim-visual-multi',
 		branch = 'master',
 		init = function()
@@ -19,16 +17,21 @@ return {
 		end,
 	},
 	{
-		-- comment
 		'numToStr/Comment.nvim',
 	},
 	{
-		-- comment TSX JSX
+		"j-hui/fidget.nvim",
+		opts = {
+			notification = {
+				override_vim_notify = true,
+			}
+		}
+	},
+	{
 		'JoosepAlviste/nvim-ts-context-commentstring',
 		lazy = false,
 	},
 	{
-		-- surround
 		"tpope/vim-surround"
 	}
 }
